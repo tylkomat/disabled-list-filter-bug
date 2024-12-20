@@ -9,5 +9,18 @@ export const Users: CollectionConfig = {
   fields: [
     // Email added by default
     // Add more fields as needed
+    {
+      name: 'toDisable',
+      label: 'toDisable',
+      type: 'text',
+      admin: {
+        disableListFilter: true,
+      },
+    },
+    {
+      name: 'other',
+      label: 'Other',
+      type: 'text',
+    },
   ],
 }
